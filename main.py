@@ -19,7 +19,7 @@ sqeue = ResNet50(include_top=True,
                  weights=None,
                  input_tensor=None,
                  input_shape=(32, 32, 3),
-                 pooling=None,
+                 pooling='avg',
                  classes=10, )
 
 # plot_model(sqeue, 'resxnet.png', show_shapes=True)
