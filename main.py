@@ -25,7 +25,7 @@ sqeue = ResNet50(include_top=True,
 # plot_model(sqeue, 'resxnet.png', show_shapes=True)
 # sqeue = model(weights=None, classes=10, input_shape=(32, 32, 3))
 # initiate RMSprop optimizer
-opt = keras.optimizers.adam(1e-4)
+opt = keras.optimizers.adam(1e-2, decay=0.01)
 
 # Let's train the model using RMSprop
 loss = 'categorical_crossentropy'
